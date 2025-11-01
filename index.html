@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Passport Photo Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-image-crop@11.0.5/dist/ReactCrop.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   <script type="importmap">
 {
@@ -13,10 +13,21 @@
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-image-crop": "https://esm.sh/react-image-crop@11.0.5",
+    "react-i18next": "https://aistudiocdn.com/react-i18next@^16.2.3",
+    "i18next": "https://aistudiocdn.com/i18next@^25.6.0"
   }
 }
 </script>
+<style>
+  .ReactCrop__crop-selection {
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 1px, transparent 1px);
+    background-size: 33.33% 33.33%;
+  }
+</style>
 </head>
   <body class="bg-gray-100 dark:bg-gray-900">
     <div id="root"></div>

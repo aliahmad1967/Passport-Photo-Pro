@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { DownloadIcon, PrintIcon } from './Icon';
 
@@ -26,14 +25,14 @@ const ResultDisplay: React.FC<ResultDisplayProps> = ({ imageUrl, onPrint }) => {
           onClick={handleDownload}
           className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 font-semibold text-white bg-green-600 rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300 dark:focus:ring-green-800 transition-transform transform hover:scale-105"
         >
-          <DownloadIcon className="w-5 h-5 mr-2" />
+          <DownloadIcon className="w-5 h-5 me-2" />
           Download Photo
         </button>
         <button
           onClick={onPrint}
           className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 font-semibold text-white bg-sky-600 rounded-lg shadow-md hover:bg-sky-700 focus:outline-none focus:ring-4 focus:ring-sky-300 dark:focus:ring-sky-800 transition-transform transform hover:scale-105"
         >
-          <PrintIcon className="w-5 h-5 mr-2" />
+          <PrintIcon className="w-5 h-5 me-2" />
           Prepare for Printing
         </button>
       </div>

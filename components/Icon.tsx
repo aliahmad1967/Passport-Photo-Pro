@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface IconProps {
@@ -11,7 +10,7 @@ export const CameraIcon: React.FC<IconProps> = ({ className }) => (
     className={className}
     width="24"
     height="24"
-    viewBox="0 0 24 24"
+    viewBox="0 0 24"
     strokeWidth="2"
     stroke="currentColor"
     fill="none"
@@ -30,7 +29,7 @@ export const UploadIcon: React.FC<IconProps> = ({ className }) => (
     className={className}
     width="24"
     height="24"
-    viewBox="0 0 24 24"
+    viewBox="0 0 24"
     strokeWidth="2"
     stroke="currentColor"
     fill="none"
@@ -51,7 +50,7 @@ export const DownloadIcon: React.FC<IconProps> = ({ className }) => (
     className={className}
     width="24"
     height="24"
-    viewBox="0 0 24 24"
+    viewBox="0 0 24"
     strokeWidth="2"
     stroke="currentColor"
     fill="none"
@@ -71,7 +70,7 @@ export const PrintIcon: React.FC<IconProps> = ({ className }) => (
       className={className}
       width="24"
       height="24"
-      viewBox="0 0 24 24"
+      viewBox="0 0 24"
       strokeWidth="2"
       stroke="currentColor"
       fill="none"
@@ -91,7 +90,7 @@ export const LightbulbIcon: React.FC<IconProps> = ({ className }) => (
       className={className}
       width="24"
       height="24"
-      viewBox="0 0 24 24"
+      viewBox="0 0 24"
       strokeWidth="2"
       stroke="currentColor"
       fill="none"
@@ -111,7 +110,7 @@ export const CrossIcon: React.FC<IconProps> = ({ className }) => (
     className={className} 
     width="24" 
     height="24" 
-    viewBox="0 0 24 24" 
+    viewBox="0 0 24" 
     strokeWidth="2" 
     stroke="currentColor" 
     fill="none" 
@@ -120,5 +119,95 @@ export const CrossIcon: React.FC<IconProps> = ({ className }) => (
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
     <path d="M18 6l-12 12" />
     <path d="M6 6l12 12" />
+  </svg>
+);
+
+export const CropIcon: React.FC<IconProps> = ({ className }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    className={className}
+    width="24" 
+    height="24" 
+    viewBox="0 0 24" 
+    strokeWidth="2" 
+    stroke="currentColor" 
+    fill="none" 
+    strokeLinecap="round" 
+    strokeLinejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M8 5v10a1 1 0 0 0 1 1h10" />
+    <path d="M5 8h10a1 1 0 0 1 1 1v10" />
+  </svg>
+);
+
+export const LockClosedIcon: React.FC<IconProps> = ({ className }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    className={className}
+    width="24" 
+    height="24" 
+    viewBox="0 0 24" 
+    strokeWidth="2" 
+    stroke="currentColor" 
+    fill="none" 
+    strokeLinecap="round" 
+    strokeLinejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M5 11m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
+    <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+    <path d="M8 11v-4a4 4 0 0 1 8 0v4" />
+  </svg>
+);
+
+export const LockOpenIcon: React.FC<IconProps> = ({ className }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    className={className}
+    width="24" 
+    height="24" 
+    viewBox="0 0 24" 
+    strokeWidth="2" 
+    stroke="currentColor" 
+    fill="none" 
+    strokeLinecap="round" 
+    strokeLinejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M5 11m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
+    <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+    <path d="M8 11v-4a4 4 0 1 1 8 0" />
+  </svg>
+);
+
+export const UndoIcon: React.FC<IconProps> = ({ className }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    className={className}
+    width="24" 
+    height="24" 
+    viewBox="0 0 24 24" 
+    strokeWidth="2" 
+    stroke="currentColor" 
+    fill="none" 
+    strokeLinecap="round" 
+    strokeLinejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" />
+  </svg>
+);
+
+export const RedoIcon: React.FC<IconProps> = ({ className }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    className={className}
+    width="24" 
+    height="24" 
+    viewBox="0 0 24 24" 
+    strokeWidth="2" 
+    stroke="currentColor" 
+    fill="none" 
+    strokeLinecap="round" 
+    strokeLinejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M15 13l4 -4l-4 -4m4 4h-11a4 4 0 0 0 0 8h1" />
   </svg>
 );
